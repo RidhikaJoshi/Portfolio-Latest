@@ -3,10 +3,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import photo from '../assests/Screenshot 2023-07-17 114109.png'
 
 export function AboutMeComponent() {
   return (
-    <div className="min-h-screen bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div id="about" className="min-h-screen bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -25,7 +26,7 @@ export function AboutMeComponent() {
             className="w-64 h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg shadow-purple-500/50"
           >
             <Image
-              src="/placeholder.svg?height=256&width=256"
+              src={photo}
               alt="Profile"
               width={256}
               height={256}

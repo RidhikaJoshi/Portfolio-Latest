@@ -36,7 +36,7 @@ const skills = [
 
 export function SkillsSectionComponent() {
   return (
-    <div className="min-h-screen w-[80%] bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div id="skills" className="min-h-screen w-[80%] bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
