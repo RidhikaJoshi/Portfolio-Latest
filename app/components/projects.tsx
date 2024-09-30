@@ -63,12 +63,13 @@ export function ProjectsSection() {
       { threshold: 0.1 }
     )
 
-    projectRefs.current.forEach((ref) => {
+    const currentRefs = projectRefs.current;
+    currentRefs.forEach((ref) => {
       if (ref) observer.observe(ref)
     })
 
     return () => {
-      projectRefs.current.forEach((ref) => {
+      currentRefs.forEach((ref) => {
         if (ref) observer.unobserve(ref)
       })
     }

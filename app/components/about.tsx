@@ -59,7 +59,7 @@ export function AboutMeComponent() {
                 <span>Exploring new cultures and experiences through travel</span>
               </div>
             </div>
-            <p className="text-white mt-6 mb-6">"Endeavoring to create impactful contributions that bring about meaningful change."</p>
+            <p className="text-white mt-6 mb-6">&quot;Endeavoring to create impactful contributions that bring about meaningful change.&quot;</p>
           </motion.div>
         </div>
         

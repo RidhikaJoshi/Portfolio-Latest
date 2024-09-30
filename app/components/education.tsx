@@ -61,7 +61,9 @@ export function EducationSection() {
       { threshold: 0.2 }
     )
 
-    itemRefs.current.forEach((ref) => {
+    const currentItemRefs = itemRefs.current;
+
+    currentItemRefs.forEach((ref) => {
       if (ref) observer.observe(ref)
     })
 
@@ -78,7 +80,7 @@ export function EducationSection() {
     window.addEventListener('scroll', handleScroll)
 
     return () => {
-      itemRefs.current.forEach((ref) => {
+      currentItemRefs.forEach((ref) => {
         if (ref) observer.unobserve(ref)
       })
       window.removeEventListener('scroll', handleScroll)

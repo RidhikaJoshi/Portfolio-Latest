@@ -65,7 +65,7 @@ export function HomePageComponent() {
                 <h1 className="text-4xl lg:text-6xl font-bold mb-4">
                   Welcome to My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Dev World</span>
                 </h1>
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-6">I'm Ridhika Joshi</h2>
+                <h2 className="text-2xl lg:text-3xl font-semibold mb-6">I&apos;m Ridhika Joshi</h2>
                 <p className="text-lg mb-8 text-gray-300">
                 Transforming visions into reality with cutting-edge full-stack solutions. Mastering the MERN stack to craft dynamic and user-centric applications that redefine digital engagement.
                 </p>
