@@ -21,7 +21,7 @@ const educationData = [
     title: "12th Standard",
     institution: "St.Joseph's Convent",
     icon: FaGraduationCap,
-    date: "July 2018- March 2020",
+    date: "July 2018 - March 2020",
     details: [
       "Percentage-96.25%",
       "Ranked 2nd in the school"
@@ -32,7 +32,7 @@ const educationData = [
     title: "10th Standard",
     institution: "City High School",
     icon: FaGraduationCap,
-    date: "2014 - 2016",
+    date: "April 2017 - June 2018",
     details: [
       "Percentage-93.25%",
       "House Captain for a year"
