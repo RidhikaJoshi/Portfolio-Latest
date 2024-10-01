@@ -31,9 +31,6 @@ export function HomePageComponent() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-       <div className="w-[80%]">
-        <FloatingParticles />
-        </div>
       <header className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 z-20 h-20 flex items-center">
         <nav className="container mx-auto px-6 py-3">
           <ul className="flex justify-center space-x-6">
@@ -106,35 +103,6 @@ export function HomePageComponent() {
         </section>
       </main> 
      
-    </div>
-  )
-}
-function FloatingParticles() {
-  const particles = Array.from({ length: 20 }, (_, i) => i)
-
-  return (
-    <div className=' w-[80%]'>
-      {particles.map((_, index) => (
-        <motion.div
-          key={index}
-          className="absolute w-2 h-2 bg-pink-500 rounded-full opacity-50"
-          animate={{
-            x: [0, Math.random() * 100 - 50, 0],
-            y: [0, Math.random() * 100 - 50, 0],
-            scale: [1, 1.5, 1],
-            opacity: [0.2, 0.8, 0.2],
-          }}
-          transition={{
-            duration: Math.random() * 5 + 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-        />
-      ))}
     </div>
   )
 }
