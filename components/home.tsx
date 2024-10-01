@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion,AnimatePresence} from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
-import photo from '../assests/My.webp'
+import photo from '../app/assests//My.webp'
 import { Menu, X } from 'lucide-react'
 
 const navItems = ['Home','About', 'Skills', 'Projects', 'Education', 'Contact']

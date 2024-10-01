@@ -1,10 +1,10 @@
-import { AboutMeComponent } from "./components/about"
-import { SkillsSectionComponent } from "./components/skills";
-import { ProjectsSection } from "./components/projects";
-import {EducationSection } from "./components/education";
-import {ContactSection} from "./components/contact";
-import { HomePageComponent } from "./components/home";
-import {CodingProfilesComponent} from "./components/codingProfiles"
+import { AboutMeComponent } from "../components/about"
+import { SkillsSectionComponent } from "../components/skills";
+import { ProjectsSection } from "../components/projects";
+import {EducationSection } from "../components/education";
+import {ContactSection} from "../components/contact";
+import { HomePageComponent } from "../components/home";
+import {CodingProfilesComponent} from "../components/codingProfiles"
 
 export default function Home() {
   return (

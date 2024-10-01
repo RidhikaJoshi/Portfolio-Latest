@@ -3,12 +3,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import Libris from '../assests/Libris.webp'
-import BlogSphere from '../assests/BlogSphere.webp'
-import TouristNest from '../assests/TouristNest.webp'
-import VideoTweets from '../assests/VideoTweets.webp'
-import MusicAcademy from '../assests/MusicAcademy.webp'
-import portfolio from '../assests/Portfolio.webp'
+import Libris from '../app/assests/Libris.webp'
+import BlogSphere from '../app/assests/BlogSphere.webp'
+import TouristNest from '../app/assests/TouristNest.webp'
+import VideoTweets from '../app/assests/VideoTweets.webp'
+import MusicAcademy from '../app/assests/MusicAcademy.webp'
+import portfolio from '../app/assests/Portfolio.webp'
 
 const projects = [
   {

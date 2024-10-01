@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaEnvelope } from 'react-icons/fa'
-import connect from "../assests/connect.webp"
+import connect from "../app/assests//connect.webp"
 
 export function ContactSection() {
   return (

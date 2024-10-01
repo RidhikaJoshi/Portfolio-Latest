@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import photo from '../assests/CSE_RIDHIKAJOSHI_PHOTO.webp'
+import photo from '../app/assests/CSE_RIDHIKAJOSHI_PHOTO.webp'
 
 export function AboutMeComponent() {
   return (
