@@ -2,14 +2,16 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion,AnimatePresence} from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
 import photo from '../assests/My.webp'
+import { Menu, X } from 'lucide-react'
 
 const navItems = ['Home','About', 'Skills', 'Projects', 'Education', 'Contact']
 
 export function HomePageComponent() {
-  const [activeSection, setActiveSection] = useState('')
+  const [activeSection, setActiveSection] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,28 +31,83 @@ export function HomePageComponent() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-      <header className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 z-20 h-20 flex items-center">
-        <nav className="container mx-auto px-6 py-3">
-          <ul className="flex justify-center space-x-6">
-            {navItems.map((item) => (
-              <li key={item}>
+     <header className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex-shrink-0">
+            <span className="text-pink-400 text-xl font-serif italic">Ridhika</span>
+          </div>
+          <nav className="hidden md:block">
+            <ul className="flex space-x-4">
+              {navItems.map((item) => (
+                <li key={item}>
+                  <ScrollLink
+                    to={item.toLowerCase()}
+                    smooth={true}
+                    duration={500}
+                    className={`cursor-pointer px-3 py-2 rounded-md text-lg font-semibold text-pink-400 ${
+                      activeSection === item.toLowerCase()
+                        ? 'bg-gray-700 text-white'
+                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    }`}
+                  >
+                    {item}
+                  </ScrollLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            >
+              <span className="sr-only">Open main menu</span>
+              {isMenuOpen ? (
+                <X className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Menu className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden"
+          >
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {navItems.map((item) => (
                 <ScrollLink
+                  key={item}
                   to={item.toLowerCase()}
                   smooth={true}
                   duration={500}
-                  className={`cursor-pointer hover:text-pink-500 transition-colors md:font-semibold font-medium md:text-lg text-sm ${
-                    activeSection === item.toLowerCase() ? 'text-pink-500' : ''
+                  className={`cursor-pointer block px-3 py-2 rounded-md text-base font-medium ${
+                    activeSection === item.toLowerCase()
+                      ? 'bg-gray-700 text-white'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                   }`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
                 </ScrollLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
 
       <main className="pt-16">
      
