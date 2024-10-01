@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
-import photo from '../assests/Screenshot 2023-07-17 114109.png'
+import photo from '../assests/My.webp'
 
 const navItems = ['Home','About', 'Skills', 'Projects', 'Education', 'Contact']
 
@@ -95,7 +95,7 @@ export function HomePageComponent() {
                   alt="Ridhika Joshi"
                   width={300}
                   height={300}
-                  className="rounded-full border-4 border-pink-300 m-auto"
+                  className="rounded-full border-4 border-pink-400 m-auto"
                 />
               </motion.div>
             </div>

@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaEnvelope } from 'react-icons/fa'
+import connect from "../assests/connect.webp"
 
 export function ContactSection() {
   return (
@@ -16,10 +17,10 @@ export function ContactSection() {
           <div className="bg-[#0a0a0a] rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-1/2">
               <Image
-                src=""
+                src={connect}
                 alt="Futuristic Helmet"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 className="w-full h-auto rounded-2xl"
               />
             </div>

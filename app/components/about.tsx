@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import photo from '../assests/CSE_RIDHIKAJOSHI_PHOTO.png'
+import photo from '../assests/CSE_RIDHIKAJOSHI_PHOTO.webp'
 
 export function AboutMeComponent() {
   return (
@@ -23,7 +23,7 @@ export function AboutMeComponent() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-64 h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg shadow-purple-500/50"
+            className="w-64 h-64 rounded-full overflow-hidden border-4 border-pink-400 shadow-lg shadow-purple-500/50"
           >
             <Image
               src={photo}
@@ -47,15 +47,24 @@ export function AboutMeComponent() {
             <p className="text-white mb-6">In addition to my dedication to coding and development, I have a broad range of interests that inspire my creativity:</p>
             <div className="space-y-4">
               <div className="flex items-center">
-                <span className="text-yellow-400 mr-2">📍</span>
+                <span className="text-pink-400 mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+  <path fillRule="evenodd" d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z" clipRule="evenodd" />
+</svg>
+</span>
                 <span>Enriching my perspective through self-help books</span>
               </div>
               <div className="flex items-center">
-                <span className="text-green-400 mr-2">💼</span>
+                <span className="text-pink-400 mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+  <path fillRule="evenodd" d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z" clipRule="evenodd" />
+</svg>
+</span>
                 <span>Unleashing creativity through painting</span>
               </div>
               <div className="flex items-center">
-                <span className="text-blue-400 mr-2">🎓</span>
+                <span className="text-pink-400 mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+  <path fillRule="evenodd" d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z" clipRule="evenodd" />
+</svg>
+</span>
                 <span>Exploring new cultures and experiences through travel</span>
               </div>
             </div>

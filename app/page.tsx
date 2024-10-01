@@ -4,6 +4,7 @@ import { ProjectsSection } from "./components/projects";
 import {EducationSection } from "./components/education";
 import {ContactSection} from "./components/contact";
 import { HomePageComponent } from "./components/home";
+import {CodingProfilesComponent} from "./components/codingProfiles"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <AboutMeComponent />
     <SkillsSectionComponent/>
     <ProjectsSection/>
+    <CodingProfilesComponent/>
     <EducationSection/>
     <ContactSection/>
     </div>
