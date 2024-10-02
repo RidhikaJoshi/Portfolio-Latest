@@ -45,7 +45,7 @@ const projects = [
     image: TouristNest,
     liveLink: 'https://touristnest.onrender.com/',
     githubLink: 'https://github.com/RidhikaJoshi/TouristNest',
-    tags: ['NodeJs', 'ExpressJs', 'MongoDb', 'React', 'TailwindCSS', 'ShadCN UI', 'Stripe']
+    tags: ['NodeJs', 'ExpressJs', 'MongoDb', 'React', 'TailwindCSS', 'ShadCN UI', 'Stripe','Cron Job']
   },
   {
     id: 5,
