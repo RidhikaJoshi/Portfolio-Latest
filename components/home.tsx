@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion} from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
 import photo from '../app/assests//My.webp'
-import { Home, Briefcase, Book, Code, Layers, Mail } from 'lucide-react'
+import { Home, Briefcase, Book, Code, Layers, Mail,SquareCode  } from 'lucide-react'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 
 const navItems = [
@@ -13,6 +13,7 @@ const navItems = [
   { name: 'About', icon: Book },
   { name: 'Skills', icon: Code },
   { name: 'Projects', icon: Briefcase },
+  {name: 'CodingProfiles', icon: SquareCode},
   { name: 'Education', icon: Layers },
   { name: 'Contact', icon: Mail }
 ]
