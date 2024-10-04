@@ -6,6 +6,7 @@ import { motion} from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
 import photo from '../app/assests//My.webp'
 import { Home, Briefcase, Book, Code, Layers, Mail } from 'lucide-react'
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 
 const navItems = [
   { name: 'Home', icon: Home },
@@ -112,6 +113,38 @@ export function HomePageComponent() {
                   >
                    View Resume
                   </motion.a>
+                  <div className="flex gap-2">
+                <motion.a
+                  href="https://www.linkedin.com/in/ridhika-joshi-069164221/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-gray-800 text-white rounded-full hover:bg-gray-700 hover:text-pink-400 transition duration-300"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <FaLinkedin size={20} />
+                </motion.a>
+                <motion.a
+                  href="https://github.com/RidhikaJoshi" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-gray-800 text-white rounded-full hover:bg-gray-700 hover:text-pink-400 transition duration-300"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <FaGithub size={20} />
+                </motion.a>
+                <motion.a
+                  href="https://x.com/ridhika_joshi" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-gray-800 text-white rounded-full hover:bg-gray-700 hover:text-pink-400 transition duration-300"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <FaTwitter size={20} />
+                </motion.a>
+              </div>
                 </div>
               </motion.div>
               
