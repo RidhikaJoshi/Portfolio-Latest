@@ -11,8 +11,9 @@ export default function Home() {
     <div className="bg-black flex flex-col items-center justify-center">
       <HomePageComponent/>
     <AboutMeComponent />
-    <SkillsSectionComponent/>
+   
     <ProjectsSection/>
+    <SkillsSectionComponent/>
     <CodingProfilesComponent/>
     <EducationSection/>
     <ContactSection/>
