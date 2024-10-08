@@ -36,7 +36,7 @@ const projects = [
     image: VideoTweets,
     liveLink: 'https://documenter.getpostman.com/view/18992770/2sA2xpR8nu',
     githubLink: 'https://github.com/RidhikaJoshi/VideoTweets',
-    tags: ['NodeJs', 'ExpressJs', 'MongoDb']
+    tags: ['NodeJs', 'ExpressJs', 'MongoDb','Docker', 'JWT']
   },
   {
     id: 4,
