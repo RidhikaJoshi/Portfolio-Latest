@@ -105,7 +105,7 @@ export function HomePageComponent() {
                 Transforming visions into reality with cutting-edge full-stack solutions. Mastering the MERN stack to craft dynamic and user-centric applications that redefine digital engagement.
                 </p>
                 <div className="flex space-x-4">
-                  <motion.a
+                  {/* <motion.a
                     href="https://drive.google.com/file/d/1CkI4uZ-rjcgMBdOtv5TiVW9EJZjV0ZMM/view?usp=sharing"
                     className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-full hover:from-purple-600 hover:to-pink-600 transition duration-300"
                     whileHover={{ scale: 1.05 }}
@@ -113,7 +113,7 @@ export function HomePageComponent() {
                     target='_blank'
                   >
                    View Resume
-                  </motion.a>
+                  </motion.a> */}
                   <div className="flex gap-2">
                 <motion.a
                   href="https://www.linkedin.com/in/ridhika-joshi-069164221/" 
