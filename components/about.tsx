@@ -110,7 +110,7 @@ export function AboutMeComponent() {
               variants={fadeInUpVariants}
               className="text-white mt-6 italic"
             >
-              "Endeavoring to create impactful contributions that bring about meaningful change."
+              &quot;Endeavoring to create impactful contributions that bring about meaningful change.&quot;
             </motion.p>
           </div>
         </div>
