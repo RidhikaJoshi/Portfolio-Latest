@@ -7,11 +7,12 @@ import { HomePageComponent } from "../components/home";
 import {CodingProfilesComponent} from "../components/codingProfiles"
 
 export default function Home() {
+
+
   return (
     <div className="bg-black flex flex-col items-center justify-center">
-      <HomePageComponent/>
+    <HomePageComponent/>
     <AboutMeComponent />
-   
     <ProjectsSection/>
     <SkillsSectionComponent/>
     <CodingProfilesComponent/>
