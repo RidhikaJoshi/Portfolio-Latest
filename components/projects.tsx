@@ -125,7 +125,7 @@ export function ProjectsSection() {
               }}
             >
               <div className="absolute inset-0  border-2 border-pink-400 "></div>
-              <div className="relative z-10 p-8 h-full flex flex-col">
+              <div className="relative z-10 p-8 h-full flex flex-col gap-2">
                 <DirectionAwareHover imageUrl={project.image}>
                 
                   </DirectionAwareHover>

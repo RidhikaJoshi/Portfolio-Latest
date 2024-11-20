@@ -7,9 +7,9 @@ import {
   SiExpress, SiMongodb, SiPostgresql, 
   SiTailwindcss, SiGit, SiDocker,SiAppwrite, SiCplusplus, SiHtml5, SiCss3, SiRedux, SiPostman
 } from 'react-icons/si'
-import { SiPrisma } from "react-icons/si";
-import { SiRecoil } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { SiPrisma } from 'react-icons/si'
+import { SiRecoil } from 'react-icons/si'
+import { FaAws } from 'react-icons/fa'
 
 const skills = [
   { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-400' },
