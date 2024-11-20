@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
 import { SiLeetcode } from 'react-icons/si'
 import { SiGeeksforgeeks } from 'react-icons/si'
 import { SiCodechef } from 'react-icons/si'
