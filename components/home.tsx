@@ -7,6 +7,7 @@ import { Link as ScrollLink } from 'react-scroll'
 import photo from '../app/assests//My.webp'
 import { Home, Book, Code, Layers, Mail,SquareCode,FolderCode   } from 'lucide-react'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+import { BackgroundBeams } from './ui/background-beams'
 
 const navItems = [
   { name: 'Home', icon: Home },
@@ -43,7 +44,7 @@ export function HomePageComponent() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
      <header className="fixed top-0 left-0 right-0 z-20 px-4 py-4 ">
-      <nav className="max-w-2xl mx-auto bg-gradient-to-r from-gray-900 to-black rounded-full px-4 py-3 border-[0.1px] border-pink-300">
+      <nav className="max-w-2xl mx-auto bg-gradient-to-r from-gray-900 to-black rounded-full px-4 md:py-3  py-1 border-[0.1px] border-pink-300">
         {/* Desktop Navigation */}
         <ul className="hidden md:flex justify-between items-center">
           {navItems.map((item) => (
@@ -168,6 +169,7 @@ export function HomePageComponent() {
           </div>
         </section>
       </main> 
+      <BackgroundBeams />
      
     </div>
   )
