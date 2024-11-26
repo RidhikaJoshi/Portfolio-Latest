@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import Libris from '../app/assests/Libris.webp'
 import BlogSphere from '../app/assests/BlogSphere.webp'

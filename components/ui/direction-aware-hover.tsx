@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 
 export const DirectionAwareHover = ({
@@ -12,7 +13,7 @@ export const DirectionAwareHover = ({
   imageClassName,
   className,
 }: {
-  imageUrl: any;
+  imageUrl: StaticImageData;
   children?: React.ReactNode | string;
   childrenClassName?: string;
   imageClassName?: string;
