@@ -9,6 +9,8 @@ import TouristNest from '../app/assests/TouristNest.webp'
 import VideoTweets from '../app/assests/VideoTweets.webp'
 import MusicAcademy from '../app/assests/MusicAcademy.webp'
 import portfolio from '../app/assests/Portfolio.webp'
+import { DirectionAwareHover } from '../components/ui/direction-aware-hover'
+
 
 const projects = [
   {
@@ -125,11 +127,9 @@ export function ProjectsSection() {
             >
               <div className="absolute inset-0  border-2 border-pink-400 "></div>
               <div className="relative z-10 p-8 h-full flex flex-col">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover rounded-xl mb-6"
-                />
+                <DirectionAwareHover imageUrl={project.image}>
+                
+                  </DirectionAwareHover>
                 <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
                 <p className="text-gray-300 mb-4 text-sm flex-grow">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
