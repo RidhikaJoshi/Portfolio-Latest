@@ -5,6 +5,7 @@ import {EducationSection } from "../components/education";
 import {ContactSection} from "../components/contact";
 import { HomePageComponent } from "../components/home";
 import {CodingProfilesComponent} from "../components/codingProfiles"
+import { TimelineDemo } from "@/components/edu";
 
 export default function Home() {
 
@@ -16,7 +17,8 @@ export default function Home() {
     <ProjectsSection/>
     <SkillsSectionComponent/>
     <CodingProfilesComponent/>
-    <EducationSection/>
+    {/* <EducationSection/> */}
+    <TimelineDemo/>
     <ContactSection/>
     </div>
   );

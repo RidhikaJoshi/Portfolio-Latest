@@ -102,7 +102,8 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="bg-[#0a0a0a] w-full text-white py-20">
       <div className="w-[90%] lg:w-[80%] mx-auto">
-        <h2 className=" text-5xl font-extrabold mb-20 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
+        
+        <h2 className=" text-5xl font-extrabold mb-20 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text p-3">
           Projects
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center">

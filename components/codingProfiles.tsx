@@ -40,7 +40,7 @@ export function CodingProfilesComponent() {
   return (
     <section id="codingprofiles" className="py-16 w-[90%]">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-extrabold mb-14 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">Coding Profiles</h2>
+        <h2 className="text-5xl font-extrabold mb-14 p-3 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">Coding Profiles</h2>
         {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"> */}
           {/* {profiles.map((profile) => (
             <motion.a
