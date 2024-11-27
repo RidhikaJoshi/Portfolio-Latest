@@ -396,7 +396,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="bg-[#0a0a0a] text-white w-full mb-8">
+    <section id="contact" className="bg-black text-white w-full mb-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-center leading-tight">
         Wanna discuss something Great!
