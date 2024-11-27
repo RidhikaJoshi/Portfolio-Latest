@@ -1,15 +1,14 @@
-import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
-export function TimelineDemo() {
+export function EduTimeline() {
   const data = [
     {
         title: "2021-2025",
         content: (
           <div>
             <h3 className="text-lg font-semibold text-pink-400 mb-2">
-              Bachelor's Degree in Computer Science and Engineering
+              Bachelor&apos;s Degree in Computer Science and Engineering
             </h3>
             <p className="text-pink-700 font-bold mb-1">Academy of Technology</p>
             <ul className="list-disc list-inside text-white text-sm">
@@ -26,7 +25,7 @@ export function TimelineDemo() {
             <h3 className="text-lg font-semibold text-pink-400 mb-2">
               12th Standard (ISC)
             </h3>
-            <p className="text-pink-700 font-bold mb-1">St.Joseph's Convent</p>
+            <p className="text-pink-700 font-bold mb-1">St.Joseph&apos;s Convent</p>
             <ul className="list-disc list-inside text-white text-sm">
               <li>Percentage-96.25%</li>
               <li>Ranked 2nd in the school.</li>
