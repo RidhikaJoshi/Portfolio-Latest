@@ -67,7 +67,7 @@ export const DirectionAwareHover = ({
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(
-        "md:h-96 w-80 h-60 md:w-96 bg-transparent rounded-lg overflow-hidden group/card relative",
+        "md:h-96 w-full h-60 md:w-full bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
     >
@@ -90,7 +90,7 @@ export const DirectionAwareHover = ({
             <Image
               alt="image"
               className={cn(
-                "h-full w-full object-cover scale-[1.15]",
+                "h-full w-full object-cover scale-[1.1]",
                 imageClassName
               )}
               width="1000"
