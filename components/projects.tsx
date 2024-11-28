@@ -105,8 +105,65 @@ export function ProjectsSection() {
         <h2 className="text-5xl font-extrabold mb-20 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
           Projects
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center">
           {projects.map((project, index) => (
+            <div
+              key={project.id}
+              ref={(el) => {
+          projectRefs.current[index] = el;
+              }}
+              data-project-id={project.id}
+              className={`relative overflow-hidden md:min-h-[520px] min-h-[580px] md:w-[90%] w-[100%] mx-auto rounded-3xl transition-all duration-1000 ease-out ${
+          visibleProjects.includes(project.id)
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 translate-y-20'
+              }`}
+              style={{
+          backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
+          aspectRatio: '1 / 1'
+              }}
+            >
+              <div className="absolute inset-0  border-2 border-pink-400 "></div>
+              <div className="relative z-10 p-8 h-full w-full flex flex-col gap-2">
+          <DirectionAwareHover imageUrl={project.image} className='w-full'>
+          
+            </DirectionAwareHover>
+          <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
+          <p className="text-gray-300 mb-4 text-sm flex-grow">{project.description}</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="bg-gray-800 text-xs text-gray-300 px-2 py-1 rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="flex space-x-4">
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full flex items-center text-sm transition-colors duration-300 hover:from-purple-600 hover:to-pink-600"
+            >
+              <FaExternalLinkAlt className="mr-2" /> Live Demo
+            </a>
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 text-white px-4 py-2 rounded-full flex items-center text-sm transition-colors duration-300 hover:bg-gray-600"
+            >
+              <FaGithub className="mr-2" /> GitHub
+            </a>
+          </div>
+              </div>
+            </div>
+          ))}
+        </div>
+          {/* {projects.map((project, index) => (
             <div
               key={project.id}
               ref={(el) => {
@@ -125,8 +182,8 @@ export function ProjectsSection() {
               }}
             >
               <div className="absolute inset-0  border-2 border-pink-400 "></div>
-              <div className="relative z-10 p-8 h-full flex flex-col gap-2">
-                <DirectionAwareHover imageUrl={project.image}>
+              <div className="relative z-10 p-8 h-full w-full flex flex-col gap-2">
+                <DirectionAwareHover imageUrl={project.image} className='w-full'>
                 
                   </DirectionAwareHover>
                 <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
@@ -161,8 +218,7 @@ export function ProjectsSection() {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          ))} */}
       </div>
     </section>
   )
