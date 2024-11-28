@@ -1,9 +1,7 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 import { FaEnvelope } from 'react-icons/fa'
-import contact from '../app/assests/contact.webp'
 import dynamic from "next/dynamic";
  
 const World = dynamic(() => import('../components/ui/globe').then((m) => m.World), {
