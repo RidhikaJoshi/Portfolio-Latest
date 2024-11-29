@@ -20,7 +20,7 @@ const navItems = [
 ]
 
 export function HomePageComponent() {
-  const [activeSection, setActiveSection] = useState('home')
+  const [activeSection, setActiveSection] = useState("home")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,9 +42,10 @@ export function HomePageComponent() {
 
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-     <header className="fixed top-0 left-0 right-0 z-20 px-4 py-4 ">
-      <nav className="max-w-2xl z-50 mx-auto bg-gradient-to-r from-gray-900 to-black rounded-full px-4 md:py-3  py-1 border-[0.1px] border-pink-300">
+    <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
+    <BackgroundBeams className="absolute inset-0 z-0"/>
+     <header className="fixed top-0 left-0 right-0 z-30 px-4 py-4 ">
+      <nav className="max-w-2xl mx-auto bg-gradient-to-r from-gray-900 to-black rounded-full px-4 md:py-3  py-1 border-[0.1px] border-pink-300">
         {/* Desktop Navigation */}
         <ul className="hidden md:flex justify-between items-center">
           {navItems.map((item) => (
@@ -87,7 +88,7 @@ export function HomePageComponent() {
       </nav>
     </header>
 
-      <main className="pt-16">
+      <main  className="pt-16 z-10 relative">
      
         <section id="home" className="min-h-screen w-[80%] mx-auto flex items-center">
           <div className="container mx-auto px-6 py-20">
@@ -169,7 +170,6 @@ export function HomePageComponent() {
           </div>
         </section>
       </main> 
-      <BackgroundBeams />
      
     </div>
   )

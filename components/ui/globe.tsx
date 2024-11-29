@@ -175,13 +175,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .arcEndLng((d) => (d as { endLng: number }).endLng * 1)
       .arcColor((e: number) => {
         const arc = data[e];
-        return arc.color;
+        return arc ? arc.color : "#89CFF0"; // default color if arc is undefined
       })
       .arcAltitude((e: object) => {
         const { arcAlt } = e as { arcAlt: number };
         return arcAlt * 1;
       })
-      .arcStroke((e: object) => {
+      .arcStroke(() => {
        // const { order } = e as { order: number };
         return [0.32, 0.28, 0.3][Math.round(Math.random() * 2)];
       })
@@ -284,12 +284,12 @@ export function World(props: WorldProps) {
 }
 
 export function hexToRgb(hex: string) {
-  let shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+  const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function (m, r, g, b) {
     return r + r + g + g + b + b;
   });
 
-  let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result
     ? {
         r: parseInt(result[1], 16),
