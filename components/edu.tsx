@@ -7,7 +7,7 @@ export function EduTimeline() {
         title: "2021-2025",
         content: (
           <div>
-            <h3 className="text-lg font-semibold text-pink-400 mb-2">
+            <h3 className="text-lg font-semibold text-white mb-2">
               Bachelor&apos;s Degree in Computer Science and Engineering
             </h3>
             <p className="text-pink-700 font-bold mb-1">Academy of Technology</p>
@@ -22,7 +22,7 @@ export function EduTimeline() {
         title: "2018-2020", 
         content: (
           <div>
-            <h3 className="text-lg font-semibold text-pink-400 mb-2">
+            <h3 className="text-lg font-semibold text-white mb-2">
               12th Standard (ISC)
             </h3>
             <p className="text-pink-700 font-bold mb-1">St.Joseph&apos;s Convent</p>
@@ -38,7 +38,7 @@ export function EduTimeline() {
         title: "2017-2018",
         content: (
           <div>
-            <h3 className="text-lg font-semibold text-pink-400 mb-2">
+            <h3 className="text-lg font-semibold text-white mb-2">
               10th Standard (ICSE)
             </h3>
             <p className="text-pink-700 font-bold mb-1">Stepping Stone School(High)</p>
