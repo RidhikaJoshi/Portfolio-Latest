@@ -22,28 +22,62 @@ const navItems = [
 export function HomePageComponent() {
   const [activeSection, setActiveSection] = useState("home")
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = navItems.map(item => document.getElementById(item.name.toLowerCase()))
+  //     const scrollPosition = window.scrollY + 100
+
+  //     for (let i = sections.length - 1; i >= 0; i--) {
+  //       const section = sections[i]
+  //       if (section && section.offsetTop <= scrollPosition) {
+  //         setActiveSection(navItems[i].name.toLowerCase())
+  //         break
+  //       }
+  //     }
+  //   }
+
+  //   window.addEventListener('scroll', handleScroll)
+  //   return () => window.removeEventListener('scroll', handleScroll)
+  // }, [])
+
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.name.toLowerCase()))
-      const scrollPosition = window.scrollY + 100
+      const sections = navItems.map(item => document.getElementById(item.name.toLowerCase()));
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      // Special handling for home section since it's the first section
+      const homeSection = document.getElementById('home');
+      if (homeSection && scrollPosition < windowHeight / 2) {
+        setActiveSection('home');
+        return;
+      }
 
+      // Check other sections
       for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i]
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(navItems[i].name.toLowerCase())
-          break
+        const section = sections[i];
+        if (section) {
+          const sectionTop = section.offsetTop;
+          // Add some offset to make the detection more accurate
+          if (scrollPosition >= sectionTop - 100) {
+            setActiveSection(navItems[i].name.toLowerCase());
+            break;
+          }
         }
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener('scroll', handleScroll);
+    // Initial check when component mounts
+    handleScroll();
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   
   return (
-    <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-    <BackgroundBeams className="absolute inset-0 z-0"/>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
+    {/* <BackgroundBeams className="absolute inset-0 z-0"/> */}
      <header className="fixed top-0 left-0 right-0 z-30 px-4 py-4 ">
       <nav className="max-w-2xl mx-auto bg-gradient-to-r from-gray-900 to-black rounded-full px-4 md:py-3  py-1 border-[0.1px] border-pink-300">
         {/* Desktop Navigation */}
@@ -88,9 +122,9 @@ export function HomePageComponent() {
       </nav>
     </header>
 
-      <main  className="pt-16 z-10 relative">
+      <main id="home" className="pt-16 z-10 relative">
      
-        <section id="home" className="min-h-screen w-[80%] mx-auto flex items-center">
+        <section  className="min-h-screen w-[80%] mx-auto flex items-center">
           <div className="container mx-auto px-6 py-20">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
               <motion.div 
