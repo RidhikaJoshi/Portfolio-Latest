@@ -5,6 +5,7 @@ import {ContactSection} from "../components/contact";
 import { HomePageComponent } from "../components/home";
 import {CodingProfilesComponent} from "../components/codingProfiles"
 import { EduTimeline } from "@/components/edu";
+import {Hire} from "@/components/hire"
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
     <AboutMeComponent />
     <ProjectsSection/>
     <SkillsSectionComponent/>
+    <Hire/>
     <CodingProfilesComponent/>
     {/* <EducationSection/> */}
     <EduTimeline/>
