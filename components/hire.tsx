@@ -70,7 +70,7 @@ const items = [
   {
     title: "Collaborative Team Player",
     description:
-      "Effective in team environments, ensuring smooth communication and productive workflows.",
+      "I thrive in team environments by promoting open communication and collaboration to ensure alignment on shared goals. My adaptability and proactive approach streamline workflows and resolve challenges effectively, fostering a productive and harmonious atmosphere for achieving project success.",
     header: team,
     icon: <RiTeamFill className="h-4 w-4 text-white" />,
   },
@@ -91,7 +91,7 @@ const items = [
   {
     title: "Leadership and Community Engagement",
     description:
-      "Actively contributed as a Microsoft Learn Student Ambassador, promoting learning and collaboration.",
+      "Actively engaged as a Microsoft Learn Student Ambassador, fostering a culture of learning and collaboration within the tech community. Organized events, shared resources, and encouraged knowledge exchange to inspire and support peers in their educational and professional growth.",
     header: leader,
     icon: <BsFillAwardFill className="h-4 w-4 text-white" />,
   },
