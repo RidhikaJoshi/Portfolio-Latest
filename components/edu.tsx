@@ -53,7 +53,7 @@ export function EduTimeline() {
       }
   ];
   return (
-    <div id="education" className=" w-full min-h-screen">
+    <div id="education" className=" w-full min-h-screen ">
       <Timeline data={data} />
     </div>
   );
