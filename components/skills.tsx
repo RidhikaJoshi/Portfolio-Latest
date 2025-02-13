@@ -1,16 +1,17 @@
 'use client'
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { 
   SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, 
   SiExpress, SiMongodb, SiPostgresql, 
-  SiTailwindcss, SiGit, SiDocker,SiAppwrite, SiCplusplus, SiHtml5, SiRedux, SiPostman
+  SiTailwindcss, SiGit, SiDocker, SiAppwrite, SiCplusplus, SiHtml5, SiRedux, SiPostman
 } from 'react-icons/si'
 import { DiRedis } from "react-icons/di";
 import { SiPrisma } from 'react-icons/si'
 import { SiRecoil } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa'
+import ParticleBackground from '../components/particleBackground'
 
 const skills = [
   { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-400' },
@@ -36,13 +37,16 @@ const skills = [
 ]
 
 export function SkillsSectionComponent() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div id="skills" className="min-h-screen w-[80%] bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div id="skills" className="relative min-h-screen w-[80%] bg-black text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden" ref={containerRef}>
+      <ParticleBackground containerRef={containerRef} />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto"
+        className="max-w-6xl mx-auto relative z-10"
       >
         <h2 className="text-5xl font-extrabold mb-12 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
          Skills
@@ -82,3 +86,5 @@ export function SkillsSectionComponent() {
     </div>
   )
 }
+
+export default SkillsSectionComponent;
