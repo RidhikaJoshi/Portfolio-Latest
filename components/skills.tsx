@@ -5,8 +5,9 @@ import { motion } from 'framer-motion'
 import { 
   SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, 
   SiExpress, SiMongodb, SiPostgresql, 
-  SiTailwindcss, SiGit, SiDocker,SiAppwrite, SiCplusplus, SiHtml5, SiCss3, SiRedux, SiPostman
+  SiTailwindcss, SiGit, SiDocker,SiAppwrite, SiCplusplus, SiHtml5, SiRedux, SiPostman
 } from 'react-icons/si'
+import { DiRedis } from "react-icons/di";
 import { SiPrisma } from 'react-icons/si'
 import { SiRecoil } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa'
@@ -22,6 +23,7 @@ const skills = [
   { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-300' },
   { name: 'Prisma', icon: SiPrisma, color: 'text-blue-300' },
   { name: 'AWS', icon: FaAws, color: 'text-yellow-500' },
+  { name: 'Redis', icon: DiRedis, color: 'text-red-500' },
   { name: 'Docker', icon: SiDocker, color: 'text-blue-400' },
   { name: 'Git', icon: SiGit, color: 'text-orange-500' },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-300' },
@@ -31,7 +33,6 @@ const skills = [
   { name: 'Recoil', icon: SiRecoil , color: 'text-blue-400' },
   { name: 'C++', icon: SiCplusplus, color: 'text-blue-700 ' },
   { name: 'HTML', icon: SiHtml5, color: 'text-orange-500' },
-  { name: 'CSS', icon: SiCss3, color: 'text-blue-400' },
 ]
 
 export function SkillsSectionComponent() {

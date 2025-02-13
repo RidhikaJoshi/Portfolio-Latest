@@ -122,7 +122,7 @@ export function HomePageComponent() {
       </nav>
     </header>
 
-      <main id="home" className="pt-16 z-10 relative">
+      <main id="home" className="pt-10 z-10 relative">
      
         <section  className="min-h-screen w-[80%] mx-auto flex items-center">
           <div className="container mx-auto px-6 py-20">
@@ -133,13 +133,16 @@ export function HomePageComponent() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-                  Welcome to My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Dev World</span>
-                </h1>
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-6">I&apos;m Ridhika Joshi</h2>
-                <p className="text-lg mb-8 text-gray-300">
-                Transforming visions into reality with cutting-edge full-stack solutions. Mastering the MERN stack to craft dynamic and user-centric applications that redefine digital engagement.
-                </p>
+               <h1 className="text-4xl lg:text-6xl font-bold mb-4">
+                Welcome to My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Dev Universe</span>
+              </h1>
+              <h2 className="text-2xl lg:text-3xl font-semibold mb-6">I&apos;m Ridhika Joshi</h2>
+              <p className="text-lg mb-8 text-gray-300">
+                Building intuitive, high-performance applications with <span className="text-purple-400">Next.js, React.js, and Node.js</span>.  
+                Passionate about <span className="text-pink-500">scalable architecture</span>, <span className="text-blue-400">cloud deployment</span>, and <span className="text-yellow-400">real-time experiences</span>.  
+                Crafting seamless digital solutions powered by innovation, security, and user-first design.
+              </p>
+
                 <div className="flex space-x-4">
                   {/* <motion.a
                     href="https://drive.google.com/file/d/1CkI4uZ-rjcgMBdOtv5TiVW9EJZjV0ZMM/view?usp=sharing"

@@ -7,13 +7,40 @@ import BlogSphere from '../app/assests/BlogSphere.webp'
 import TouristNest from '../app/assests/TouristNest.webp'
 import VideoTweets from '../app/assests/VideoTweets.webp'
 import MusicAcademy from '../app/assests/MusicAcademy.webp'
-import portfolio from '../app/assests/Portfolio.webp'
+import collabsphere from '../app/assests/CollabSphere.webp'
 import { DirectionAwareHover } from '../components/ui/direction-aware-hover'
 
 
 const projects = [
   {
     id: 1,
+    title: 'VideoTweets',
+    description: 'VideoTweets is a pure backend project, offering a dynamic platform for sharing and engaging with multimedia content, featuring user comments, likes, playlists, and more.',
+    image: VideoTweets,
+    liveLink: 'https://documenter.getpostman.com/view/18992770/2sA2xpR8nu',
+    githubLink: 'https://github.com/RidhikaJoshi/VideoTweets',
+    tags: ['NodeJs', 'ExpressJs', 'MongoDb','Docker', 'JWT','Redis', 'Postman']
+  },
+  {
+    id: 2,
+    title: 'CollabSphere',
+    description: 'A responsive portfolio website built with Next.js and TypeScript, featuring a clean UI to showcase projects, skills, and achievements effectively.',
+    image: collabsphere,
+    liveLink: 'https://collabsphere-frontend.vercel.app/',
+    githubLink: 'https://github.com/RidhikaJoshi/CollabSphere',
+    tags: ['NextJs','Node.js','Express.js','WebSocket','PostgreSQL','Prisma', 'ShadCN UI', 'TypeScript' ,'TailwindCSS']
+  },
+  {
+    id: 3,
+    title: 'BlogSphere',
+    description: 'BlogSphere is a web application for sharing ideas through published articles, featuring user authentication, a rich text editor, and Appwrite as the backend.',
+    image: BlogSphere,
+    liveLink: 'https://d2dn3c87zlk96y.cloudfront.net/',
+    githubLink: 'https://github.com/RidhikaJoshi/Blog',
+    tags: ['Appwrite', 'React', 'Redux','TailwindCSS', 'AWS S3', ' AWS Cloudfront']
+  },
+  {
+    id: 4,
     title: 'Libris',
     description: 'Libris is a sophisticated library management system with Role-Based Access Control, streamlining the organization of digital and physical collections.',
     image: Libris,
@@ -21,26 +48,9 @@ const projects = [
     githubLink: 'https://github.com/RidhikaJoshi/Libris',
     tags: ['HonoJs', 'PostgreSQL', 'Prisma', 'TypeScript', 'Cloudflare', 'ReactJs', 'TailwindCSS', 'ShadCN UI']
   },
+
   {
-    id: 2,
-    title: 'BlogSphere',
-    description: 'BlogSphere is a web application for sharing ideas through published articles, featuring user authentication, a rich text editor, and Appwrite as the backend.',
-    image: BlogSphere,
-    liveLink: 'https://d2dn3c87zlk96y.cloudfront.net/',
-    githubLink: 'https://github.com/RidhikaJoshi/Blog',
-    tags: ['Appwrite', 'React', 'Redux','TailwindCSS', 'AWS S3', 'Cloudfront']
-  },
-  {
-    id: 3,
-    title: 'VideoTweets',
-    description: 'VideoTweets is a pure backend project, offering a dynamic platform for sharing and engaging with multimedia content, featuring user comments, likes, playlists, and more.',
-    image: VideoTweets,
-    liveLink: 'https://documenter.getpostman.com/view/18992770/2sA2xpR8nu',
-    githubLink: 'https://github.com/RidhikaJoshi/VideoTweets',
-    tags: ['NodeJs', 'ExpressJs', 'MongoDb','Docker', 'JWT']
-  },
-  {
-    id: 4,
+    id: 5,
     title: 'TouristNest',
     description: 'TouristNest is a comprehensive travel platform that combines backend functionality with a sleek frontend, offering users a seamless experience for planning and booking trips.',
     image: TouristNest,
@@ -49,22 +59,13 @@ const projects = [
     tags: ['NodeJs', 'ExpressJs', 'MongoDb', 'React', 'TailwindCSS', 'ShadCN UI', 'Stripe','Cron Job']
   },
   {
-    id: 5,
+    id: 6,
     title: 'MusicAcademy',
     description: 'A Next.js and TypeScript-based website offering music courses, built with Aceternity UI for a responsive and engaging user experience.',
     image: MusicAcademy,
     liveLink: 'https://music-xi.vercel.app/',
     githubLink: 'https://github.com/RidhikaJoshi/music',
     tags: ['NextJs', 'Aceternity', 'TypeScript' ,'TailwindCSS']
-  },
-  {
-    id: 6,
-    title: 'PortFolio Website',
-    description: 'A responsive portfolio website built with Next.js and TypeScript, featuring a clean UI to showcase projects, skills, and achievements effectively.',
-    image: portfolio,
-    liveLink: 'https://www.ridhikajoshi.me/',
-    githubLink: 'https://github.com/RidhikaJoshi/Portfolio-Latest',
-    tags: ['NextJs', 'ShadCN UI', 'TypeScript' ,'TailwindCSS']
   }
 ]
 
