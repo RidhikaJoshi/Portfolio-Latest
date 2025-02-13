@@ -13,7 +13,7 @@ const educationData = [
     date: "Oct 2021 - June 2025",
     details: [
       "Graduated with First Class Honors",
-      "GPA: 9.32/10 (till 6th Semester)"
+      "GPA: 9.37/10 (till 7th Semester)"
     ]
   },
   {
