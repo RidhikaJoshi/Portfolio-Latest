@@ -7,7 +7,7 @@ import BlogSphere from '../app/assests/BlogSphere.webp'
 import TouristNest from '../app/assests/TouristNest.webp'
 import VideoTweets from '../app/assests/VideoTweets.webp'
 import MusicAcademy from '../app/assests/MusicAcademy.webp'
-import collabsphere from '../app/assests/CollabSphere.webp'
+import collabsphere from '../app/assests/collabsphere.webp'
 import { DirectionAwareHover } from '../components/ui/direction-aware-hover'
 
 
