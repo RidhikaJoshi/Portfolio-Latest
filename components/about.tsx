@@ -44,7 +44,7 @@ export function AboutMeComponent() {
   }
 
   return (
-    <div ref={containerRef} className="relative min-h-screen bg-black text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div ref={containerRef} id="about" className="relative min-h-screen bg-black text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <ParticleBackground containerRef={containerRef} />
       <motion.div 
         ref={containerRef}
