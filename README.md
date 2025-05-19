@@ -9,6 +9,9 @@ Explore the live portfolio here: [ridhikajoshi.me](https://www.ridhikajoshi.me/)
 - **Frontend**: Next.js, Tailwind CSS
 - **Hosting**: Deployed on a Vercel
 
+![image](https://github.com/user-attachments/assets/55598075-2c05-4e83-904f-23756c2eb292)
+
+
 ## ✨ Features
 - **About Me**: Overview of my education, skills, and interests.
 - **Projects**: Detailed descriptions of my key projects like Libris, VideoTweets, BlogSphere, and TouristNest.
