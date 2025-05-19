@@ -12,8 +12,10 @@ export function EduTimeline() {
             </h3>
             <p className="text-pink-700 font-bold mb-1">Academy of Technology</p>
             <ul className="list-disc list-inside text-white text-sm">
-              <li>Graduated with First Class Honors</li>
+              {/* <li>Graduated with First Class Honors</li> */}
               <li>GPA: 9.37/10 (till 7th Semester)</li>
+              <li>Appointed as a BETA Microsoft Learn Student Ambassador.
+              </li>
             </ul>
           </div>
         ),
