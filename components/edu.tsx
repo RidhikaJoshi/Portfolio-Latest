@@ -13,7 +13,7 @@ export function EduTimeline() {
             <p className="text-pink-700 font-bold mb-1">Academy of Technology</p>
             <ul className="list-disc list-inside text-white text-sm">
               <li>Graduated with First Class Honors</li>
-              <li>GPA: 9.32/10 (till 6th Semester)</li>
+              <li>GPA: 9.37/10 (till 7th Semester)</li>
             </ul>
           </div>
         ),
